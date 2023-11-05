@@ -1,0 +1,59 @@
+print("Welcome to the computer quiz!")
+
+name = input("Type your name: ")
+print("Welcome to this quiz!")
+
+playing = input("Do you want to play? (yes/no)")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Okay! Let's play",name)
+score = 0
+
+print("1. What does CPU stand for? ")
+print("A. Computer Preprocessing Unit")
+print("B. Central Processing Unit")
+print("C. Computer Preprocessing unit")
+answer = input()
+if answer.lower() == "b":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+print("2. What does WWW stand for? ")
+print("A. World Word Web")
+print("B. World Wide Webinar")
+print("C. World Wide Web")
+answer = input()
+if answer.lower() == "c":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+print("3. What does RAM stand for? ")
+print("A. Random Access Memory")
+print("B. Random Assigned Memory")
+print("C. Read Access Memory")
+answer = input()
+if answer.lower() == "a":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+print("4. What does OS stand for? ")
+print("A. Open Source")
+print("B. Operating System")
+print("C. Open System")
+answer = input()
+if answer.lower() == "b":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score / 4) * 100) + "%.")
